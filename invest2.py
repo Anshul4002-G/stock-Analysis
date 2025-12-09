@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import time 
 
 # Set environment variable for Google API
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCUokpTy2xvazMIXO00Nv7zbulrFrY9BTQ"
+os.environ["GOOGLE_API_KEY"] = "API_KEY"
 
 # Function to fetch and compare stock data 
 def compare_stocks(symbols):
@@ -209,3 +209,4 @@ if st.sidebar.button("Generate Investment Report"):
                           template="plotly_dark")
 
         st.plotly_chart(fig)
+
