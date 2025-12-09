@@ -6,9 +6,6 @@ from agno.models.google import Gemini
 import plotly.graph_objects as go
 import time 
 
-#  run using :
-# python -m streamlit run invest2.py  
-
 # Set environment variable for Google API
 os.environ["GOOGLE_API_KEY"] = "AIzaSyCUokpTy2xvazMIXO00Nv7zbulrFrY9BTQ"
 
@@ -210,4 +207,5 @@ if st.sidebar.button("Generate Investment Report"):
                           xaxis_title="Date",
                           yaxis_title="Price (in USD)",
                           template="plotly_dark")
+
         st.plotly_chart(fig)
